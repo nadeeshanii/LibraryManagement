@@ -1,0 +1,22 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Node / React
+librarymanagement-frontend/node_modules/
+librarymanagement-frontend/build/
+librarymanagement-frontend/.env.local
+librarymanagement-frontend/.env.development.local
+librarymanagement-frontend/.env.test.local
+librarymanagement-frontend/.env.production.local
+
+# .NET
+**/bin/
+**/obj/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
