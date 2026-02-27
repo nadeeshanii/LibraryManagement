@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import BookList from "./components/BookList";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Router>
+      <div
+        style={{
+          backgroundColor: "#ffffff",
+          minHeight: "100vh",
+          fontFamily: "Poppins, sans-serif",
+          display: "flex",
+          flexDirection: "column"
+        }}
+      >
+        <Navbar />
+
+        <main
+          style={{
+            padding: "20px",
+            maxWidth: "900px",
+            margin: "0 auto",
+            flex: 1
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/books" element={<BookList />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
