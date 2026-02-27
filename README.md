@@ -111,6 +111,6 @@ Add your preferred license here (e.g., MIT).
 
 ## Author
 
-**Nadeesha**  
+**Nadeeshani**  
 GitHub: [@nadeeshanii](https://github.com/nadeeshanii)
 
