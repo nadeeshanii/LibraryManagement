@@ -1,54 +1,116 @@
 # Library Management System
 
-A simple **Library Management System** that allows users to manage books in a library.  
-Users can **create, view, update, and delete book records** using a web interface.  
-
-This project demonstrates **full-stack development** using **C# .NET 6** for the backend with an **SQLite database**, and **React with TypeScript** for the frontend.
-
----
+A simple and efficient **Library Management System** for managing books, members, and borrowing activities.
 
 ## Features
 
-- Add new books with title, author, and description  
-- View all existing books in a list  
-- Edit and update book details  
-- Delete books that are no longer needed  
-- Responsive and user-friendly frontend interface  
-- Simple CRUD operations for efficient library management  
+- Add, update, and remove books
+- Register and manage library members
+- Borrow and return book tracking
+- Search books by title, author, or category
+- View available vs borrowed books
+- Basic validation and error handling
 
----
+## Project Goals
 
-## Technologies Used
+- Reduce manual library record keeping
+- Improve tracking of book circulation
+- Provide a structured and maintainable codebase
 
-**Backend:**  
-- C# .NET 6  
-- Entity Framework Core  
-- SQLite database  
-- RESTful API development  
+## Tech Stack
 
-**Frontend:**  
-- React.js  
-- TypeScript  
-- Axios for API requests  
+> Replace with your actual stack.
 
-**Tools & Others:**  
-- Visual Studio  
-- VS Code  
-- Git (version control)  
+- Language: `...`
+- Framework: `...`
+- Database: `...`
+- Tools: `...`
 
----
+## Project Structure
 
-## Installation
+> Update this based on your folders.
 
-### Backend (API)
-1. Navigate to `LibraryManagement.API` folder
-2. Restore packages: `dotnet restore`
-3. Run the API: `dotnet run`
-4. The API will run at: `http://localhost:5085`
+```text
+LibraryManagement/
+├─ src/
+├─ tests/
+├─ docs/
+├─ .gitignore
+└─ README.md
+```
 
-### Frontend (React)
-1. Navigate to `librarymanagement-frontend` folder
-2. Install dependencies: `npm install`
-3. Run the frontend: `npm start`
-4. Open browser at: `http://localhost:3000`
+## Getting Started
+
+### Prerequisites
+
+Install:
+
+- Git
+- Your runtime/SDK (e.g., Java / .NET / Node.js / Python)
+- Database (if used)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/nadeeshanii/LibraryManagement.git
+   cd LibraryManagement
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   # Example:
+   # npm install
+   # pip install -r requirements.txt
+   # dotnet restore
+   ```
+
+3. Configure environment variables (if required).
+
+4. Run the project:
+
+   ```bash
+   # Example:
+   # npm start
+   # python main.py
+   # dotnet run
+   ```
+
+## Usage
+
+- Start the application
+- Add books and members
+- Perform borrow/return operations
+- Check reports or status screens
+
+## Testing
+
+Run tests using your test framework:
+
+```bash
+# Example:
+# npm test
+# pytest
+# dotnet test
+```
+
+## Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit changes
+4. Push and open a Pull Request
+
+## License
+
+Add your preferred license here (e.g., MIT).
+
+## Author
+
+**Nadeesha**  
+GitHub: [@nadeeshanii](https://github.com/nadeeshanii)
 
