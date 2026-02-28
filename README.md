@@ -1,116 +1,98 @@
 # Library Management System
 
-A simple and efficient **Library Management System** for managing books, members, and borrowing activities.
+Simple full-stack library app with a React frontend and ASP.NET Core Web API backend.
 
 ## Features
 
-- Add, update, and remove books
-- Register and manage library members
-- Borrow and return book tracking
-- Search books by title, author, or category
-- View available vs borrowed books
-- Basic validation and error handling
+- View all books
+- Add a new book
+- Edit existing books
+- Delete books
 
-## Project Goals
-
-- Reduce manual library record keeping
-- Improve tracking of book circulation
-- Provide a structured and maintainable codebase
 
 ## Tech Stack
 
-> Replace with your actual stack.
-
-- Language: `...`
-- Framework: `...`
-- Database: `...`
-- Tools: `...`
+- Frontend: React + TypeScript + Axios
+- Backend: ASP.NET Core Web API (.NET 10)
+- Database: SQLite + Entity Framework Core
 
 ## Project Structure
 
-> Update this based on your folders.
-
-```text
 LibraryManagement/
-├─ src/
-├─ tests/
-├─ docs/
-├─ .gitignore
+├─ librarymanagement-frontend/
+├─ LibraryManagement.API/
+├─ LibraryManagement.sln
 └─ README.md
-```
 
-## Getting Started
 
-### Prerequisites
+## Prerequisites
 
-Install:
+- .NET SDK 10
+- Node.js (LTS recommended)
+- npm
 
-- Git
-- Your runtime/SDK (e.g., Java / .NET / Node.js / Python)
-- Database (if used)
+## Setup
 
-### Installation
+1. Clone the repository
 
-1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/nadeeshanii/LibraryManagement.git
-   cd LibraryManagement
-   ```
+git clone https://github.com/nadeeshanii/LibraryManagement.git
+cd LibraryManagement
 
-2. Install dependencies:
 
-   ```bash
-   # Example:
-   # npm install
-   # pip install -r requirements.txt
-   # dotnet restore
-   ```
+2. Restore backend dependencies
 
-3. Configure environment variables (if required).
+dotnet restore LibraryManagement.sln
 
-4. Run the project:
 
-   ```bash
-   # Example:
-   # npm start
-   # python main.py
-   # dotnet run
-   ```
+3. Install frontend dependencies
 
-## Usage
 
-- Start the application
-- Add books and members
-- Perform borrow/return operations
-- Check reports or status screens
+cd librarymanagement-frontend
+npm install
+cd ..
+
+
+## Run the Application
+
+Run backend API (Terminal 1):
+
+cd LibraryManagement.API
+dotnet run
+
+
+Backend runs on:
+- `http://localhost:5085`
+- `https://localhost:5084`
+
+Run frontend (Terminal 2):
+
+
+cd librarymanagement-frontend
+npm start
+
+
+Frontend runs on `http://localhost:3000` and calls API at `http://localhost:5085/api/books`.
 
 ## Testing
 
-Run tests using your test framework:
+Frontend tests:
 
-```bash
-# Example:
-# npm test
-# pytest
-# dotnet test
-```
 
-## Contributing
+cd librarymanagement-frontend
+npm test
 
-Contributions are welcome.
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit changes
-4. Push and open a Pull Request
+Backend build check:
 
-## License
 
-Add your preferred license here (e.g., MIT).
+dotnet build LibraryManagement.sln
 
-## Author
 
-**Nadeeshani**  
-GitHub: [@nadeeshanii](https://github.com/nadeeshanii)
+## Notes
+
+- Keep backend running before using the frontend.
+- If API port changes, update `librarymanagement-frontend/src/services/bookService.ts`.
+
+
 
